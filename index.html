@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery Game</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body class='grid'>
+    <nav>
+        <h1>Welcome to the Lottery!</h1>
+        <p>$500,000 is on the line! Do you have enough money to beat the odds? <em>press f12 for ....</em> </p>
+    </nav>
+    <main>
+        <p class="winOrNot hidden"> </p>
+        <div class='start'>
+            <label id="placelabel" for="userMoney">Place your money: $</label>
+            <input id="userMoney" type="number">
+            <input class="startButton" type='button' value='Start Game'> 
+         </div>
+ 
+    </main>
+    <footer>   
+        <div class='counter'>
+            <p id="attemptFont">attempt</p>
+            <p id="attempts">0</p>
+        </div>
+        
+        <div class='money'>
+            <div class="flexbox">
+                <p class="moneyRemaining"></p>
+                <p class="moneySpent"></p>
+            </div>
+            
+        </div>
+        <div class='buyQuit'>
+            <input id="buyTicket" type='button' value="Buy Ticket">
+            <input class="restart" type='button' value="Retart Game">
+        </div>
+    </footer>
+    <script src='main.js'></script>
+</body>
+</html>
+
