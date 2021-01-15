@@ -14,7 +14,7 @@ startButton.addEventListener('click', startGame);
 let totalTries = 0;
 let cashUsed = 0;
 
-let lotteryNumber = Math.floor(Math.random() * 100) + 1;
+let lotteryNumber = Math.floor(Math.random() * 50) + 1;
 console.log('lottery Number == ' + lotteryNumber)
 restart.addEventListener('click', restartGame);
 
@@ -75,7 +75,7 @@ function ticketCost() {
 
 function checkNumber() {
     winOrNot.classList.remove('hidden')
-    let randomNumber = Math.floor(Math.random() * 100) + 1;
+    let randomNumber = Math.floor(Math.random() * 50) + 1;
     console.log(randomNumber)
     
   
@@ -117,8 +117,9 @@ function restartGame() {
     moneySpent.textContent = '';
     cashUsed = 0
     moneyRemaining.textContent = '';
+    buyTicket.disabled = false;
   
-    lotteryNumber = Math.floor(Math.random() * 100) + 1;
+    lotteryNumber = Math.floor(Math.random() * 50) + 1;
     console.log('lottery Number == ' + lotteryNumber)
     startButton.addEventListener('click', startGame);
     

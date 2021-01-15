@@ -20,8 +20,9 @@ body {
 
 nav {
     grid-area: nav;
+
     background-color: black;
-    height: 60px;
+    height: auto;
     align-self: center;
     color: white;
     text-align: center;
@@ -48,6 +49,7 @@ main {
 
 footer{
     grid-area: footer ;
+
     background-color: black;
     align-self: center;
     height: 100px;
